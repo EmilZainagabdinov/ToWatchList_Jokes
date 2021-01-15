@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Button from "../UI/Button/Button";
+import "./AddItemToWatch.css";
 
 class AddItemToWatch extends Component {
   state ={
@@ -21,16 +23,20 @@ class AddItemToWatch extends Component {
     return (
         <div className="AddMovieForm">
           <input
+              className="MovieInputField"
+              placeholder="Type movie name here..."
               type="text"
               value={this.state.inputField}
               onChange={e => this.inputChange(e.target.value)}
           />
-          <button
+          <Button
+              type="add"
+              label="Add"
               onClick={() => {
                 this.props.addItem(this.state.inputField);
                 this.inputClear();
               }}
-          >{this.props.label}</button>
+          />
         </div>
     );
   }
