@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Button from "../UI/Button/Button";
+import "./ToWatchListItem.css";
 
 class ToWatchListItem extends Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -8,8 +10,17 @@ class ToWatchListItem extends Component {
   render() {
     return (
         <div className="movieToWatch">
-          <input type="text" value={this.props.movie} onChange={event => this.props.edit(event, this.props.id)}/>
-          <button onClick={() => this.props.remove(this.props.id)}>X</button>
+          <input
+              className="MovieToWatchName"
+              type="text"
+              value={this.props.movie}
+              onChange={event => this.props.edit(event, this.props.id)}
+          />
+          <Button
+              type="remove"
+              label="&times;"
+              onClick={() => this.props.remove(this.props.id)}
+          />
         </div>
     );
   }
