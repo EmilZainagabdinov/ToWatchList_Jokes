@@ -1,25 +1,48 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Task1 from "./containers/Task1/Task1";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    taskSwitch: false,
+  };
+
+  toggleTask1 = () => {
+    this.setState({
+      taskSwitch: false
+    });
+  };
+
+  toggleTask2 = () => {
+    this.setState({
+      taskSwitch: true
+    });
+  };
+
+  render() {
+    // let task = null;
+    //
+    // if (!this.state.taskSwitch) {
+    //   task = (
+    //     <Task1 />
+    //   );
+    // } else {
+    //   task = (
+    //       <Task2 />
+    //   );
+    // }
+
+    let task = (
+        <Task1 />
+    );
+      return (
+        <div className="App">
+          <button type="button" onClick={this.toggleTask1}>Task 1</button>
+          <button type="button" onClick={this.toggleTask2}>Task 2</button>
+          {task}
+        </div>
+    );
+  };
 }
 
 export default App;
