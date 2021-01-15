@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Task1 from "./containers/Task1/Task1";
+import Task2 from "./containers/Task2/Task2";
 import './App.css';
 
 class App extends Component {
@@ -20,21 +21,17 @@ class App extends Component {
   };
 
   render() {
-    // let task = null;
-    //
-    // if (!this.state.taskSwitch) {
-    //   task = (
-    //     <Task1 />
-    //   );
-    // } else {
-    //   task = (
-    //       <Task2 />
-    //   );
-    // }
+    let task;
 
-    let task = (
-        <Task1 />
-    );
+    if (!this.state.taskSwitch) {
+      task = (
+          <Task1 />
+      );
+    } else {
+      task = (
+          <Task2 />
+      );
+    }
       return (
         <div className="App">
           <button type="button" onClick={this.toggleTask1}>Task 1</button>
