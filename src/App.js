@@ -26,11 +26,17 @@ class App extends Component {
 
     if (!this.state.taskSwitch) {
       task = (
-          <Task1 />
+          <>
+            <h5>Task 1</h5>
+            <Task1 />
+          </>
       );
     } else {
       task = (
-          <Task2 />
+          <>
+            <h5>Task 2</h5>
+            <Task2 />
+          </>
       );
     }
       return (
