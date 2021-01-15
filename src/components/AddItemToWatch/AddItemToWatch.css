@@ -1,0 +1,13 @@
+.AddMovieForm {
+  display: flex;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.MovieInputField {
+  flex-grow: 1;
+  height: 26px;
+  padding: 0 5px;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}

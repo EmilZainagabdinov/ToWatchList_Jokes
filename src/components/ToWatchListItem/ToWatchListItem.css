@@ -1,0 +1,13 @@
+.movieToWatch {
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+}
+
+.MovieToWatchName {
+  height: 28px;
+  flex-grow: 1;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+}

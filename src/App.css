@@ -1,3 +1,18 @@
 .App {
   text-align: center;
 }
+
+.SwitchBlock {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.TaskBlock {
+  width: 40%;
+  margin: 0 auto;
+  border: 2px solid slategray;
+  border-radius: 7px;
+}
