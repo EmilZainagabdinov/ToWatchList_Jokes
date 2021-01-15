@@ -1,0 +1,31 @@
+.Button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.Button_taskSwitch {
+  background-color: forestgreen;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Button_add {
+  background-color: steelblue;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.Button_remove {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: firebrick;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+}
