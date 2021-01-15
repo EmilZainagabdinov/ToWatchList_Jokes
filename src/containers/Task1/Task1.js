@@ -48,7 +48,6 @@ class Task1 extends Component {
     return (
         <div className="TaskBlock">
           <AddItemToWatch
-              label="Add"
               addItem={this.addItemToWatch}
           />
           <ToWatchList
