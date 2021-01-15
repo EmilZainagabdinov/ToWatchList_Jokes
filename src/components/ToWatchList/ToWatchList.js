@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ToWatchListItem from "../ToWatchListItem/ToWatchListItem";
+import "./ToWatchList.css";
 
 class ToWatchList extends Component {
   render() {
