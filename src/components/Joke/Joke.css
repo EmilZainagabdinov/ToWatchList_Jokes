@@ -1,4 +1,14 @@
-.ChucksJoke {
+.JokeBlock {
   margin: 0;
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ChucksJoke {
+  margin: 0 0 0 10px;
+  text-align: left;
+  line-height: 1.4;
+  font-style: italic;
+  color: #555;
 }
