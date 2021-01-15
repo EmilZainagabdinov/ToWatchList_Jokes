@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Button from "./components/UI/Button/Button";
 import Task1 from "./containers/Task1/Task1";
 import Task2 from "./containers/Task2/Task2";
 import './App.css';
@@ -34,8 +35,18 @@ class App extends Component {
     }
       return (
         <div className="App">
-          <button type="button" onClick={this.toggleTask1}>Task 1</button>
-          <button type="button" onClick={this.toggleTask2}>Task 2</button>
+          <div className="SwitchBlock">
+            <Button
+              type="taskSwitch"
+              label="Task 1"
+              onClick={this.toggleTask1}
+            />
+            <Button
+              type="taskSwitch"
+              label="Task 2"
+              onClick={this.toggleTask2}
+            />
+          </div>
           {task}
         </div>
     );
